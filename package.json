@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "flush": "pipenv run python ./project/manage.py flush --no-input",
-    "e2e": "cypress open --project ./project/frontend/",
-    "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
+    "e2e": "cypress open --project ./project_root/frontend/",
+    "dev": "webpack --mode development ./project_root/frontend/src/index.js --output ./project_root/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./project_root/frontend/src/index.js --output ./project_root/frontend/static/frontend/main.js",
     "watch": "npm-watch"
   },
   "watch": {
-    "build": "./project/frontend/src/"
+    "build": "./project_root/frontend/src/"
   },
   "repository": {
     "type": "git",
